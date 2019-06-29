@@ -1956,7 +1956,7 @@ GameObject:
   - component: {fileID: 11401308}
   - component: {fileID: 11461154}
   - component: {fileID: 22534178}
-  - component: {fileID: 11428802}
+  - component: {fileID: 1560971806508443211}
   m_Layer: 5
   m_Name: Canvas_FreeShot
   m_TagString: Untagged
@@ -2060,7 +2060,7 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &11428802
+--- !u!114 &1560971806508443211
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2069,12 +2069,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 161510}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 610490922975a4e92bc247b1198abf3f, type: 3}
+  m_Script: {fileID: 11500000, guid: dc86b09795c7a474aae041f7cb296c6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfPlayToShowInterstitial: 10
   VerySimpleAd_LINK: http://u3d.as/oWD
-  moreGamesUrl: https://barouch.fr/moregames.php
+  moreGamesUrl: http://barouch.fr/moregames.php
   rateUrl: http://barouch.fr/ww.php
   fbkPageId: 515431001924232
   fbkPageName: appadvisory

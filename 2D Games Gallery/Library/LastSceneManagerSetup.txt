@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Games/FreeShot/__Scene/FreeShot.unity
+- path: Assets/Scenes/_Menu.unity
   isLoaded: 1
   isActive: 1
