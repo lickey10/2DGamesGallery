@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/_Menu.unity
+    guid: 50287520b781f49459e5e92e09297e68
+  - enabled: 1
     path: Assets/Scenes/CircleBomb.unity
     guid: 29e39910c1cee124d9f5ecfbf11938c8
   - enabled: 1
@@ -29,9 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SlidingTilePuzzle with menu.unity
     guid: 7d12a4a7094b7814bb6ecf8c6cf41a2a
-  - enabled: 1
-    path: Assets/Scenes/_Menu.unity
-    guid: 50287520b781f49459e5e92e09297e68
   - enabled: 1
     path: Assets/Scenes/Spinny.unity
     guid: 3d44cd762cb6616409290f7c62c7321c
