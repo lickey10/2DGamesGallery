@@ -294,3 +294,5 @@ D:\utilities\Programming\Unity\Repos\2DGamesGallery\2D Games Gallery\obj\Debug\A
 D:\utilities\Programming\Unity\Repos\2DGamesGallery\2D Games Gallery\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 D:\utilities\Programming\Unity\Repos\2DGamesGallery\2D Games Gallery\obj\Debug\Assembly-CSharp.dll
 D:\utilities\Programming\Unity\Repos\2DGamesGallery\2D Games Gallery\obj\Debug\Assembly-CSharp.pdb
+D:\utilities\Programming\Unity\Repos\2DGamesGallery\2D Games Gallery\Temp\bin\Debug\UnityEngine.SpatialTrackingModule.dll
+D:\utilities\Programming\Unity\Repos\2DGamesGallery\2D Games Gallery\Temp\bin\Debug\UnityEngine.SpatialTrackingModule.xml

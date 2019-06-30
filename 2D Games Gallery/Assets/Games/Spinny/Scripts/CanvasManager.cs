@@ -28,7 +28,7 @@ namespace AppAdvisory.AA
 	public class CanvasManager : MonobehaviourHelper
 	{
 		/// <summary>
-		/// Delegate subscribe by the GameManager_spinny and triggered when creating a new level (if player win, or if switching manually the levels)
+		/// Delegate subscribe by the GameManager and triggered when creating a new level (if player win, or if switching manually the levels)
 		/// </summary>
 		public delegate void CreateGame(int level);
 		public static event CreateGame OnCreateGame;
@@ -128,22 +128,22 @@ namespace AppAdvisory.AA
 
 		void OnEnable()
 		{
-			GameManager_spinny.OnSuccessStart += OnSuccessStart;
-			GameManager_spinny.OnSuccessComplete += OnSuccessComplete;
-			GameManager_spinny.OnFailStart += OnFailStart;
-			GameManager_spinny.OnFailComplete += OnFailComplete;
+			GameManager.OnSuccessStart += OnSuccessStart;
+			GameManager.OnSuccessComplete += OnSuccessComplete;
+			GameManager.OnFailStart += OnFailStart;
+			GameManager.OnFailComplete += OnFailComplete;
 		}
 
 		void OnDisable()
 		{
-			GameManager_spinny.OnSuccessStart -= OnSuccessStart;
-			GameManager_spinny.OnSuccessComplete -= OnSuccessComplete;
-			GameManager_spinny.OnFailStart -= OnFailStart;
-			GameManager_spinny.OnFailComplete -= OnFailComplete;
+			GameManager.OnSuccessStart -= OnSuccessStart;
+			GameManager.OnSuccessComplete -= OnSuccessComplete;
+			GameManager.OnFailStart -= OnFailStart;
+			GameManager.OnFailComplete -= OnFailComplete;
 		}
 
 		/// <summary>
-		/// Called when GameManager_spinny trigger the delegate OnSuccessStart
+		/// Called when GameManager trigger the delegate OnSuccessStart
 		/// </summary>
 		void OnSuccessStart()
 		{
@@ -151,7 +151,7 @@ namespace AppAdvisory.AA
 		}
 
 		/// <summary>
-		/// Called when GameManager_spinny trigger the delegate OnSuccessComplete. Will create the next level
+		/// Called when GameManager trigger the delegate OnSuccessComplete. Will create the next level
 		/// </summary>
 		void OnSuccessComplete()
 		{
@@ -159,7 +159,7 @@ namespace AppAdvisory.AA
 		}
 
 		/// <summary>
-		/// Called when GameManager_spinny trigger the delegate OnFailStart. Will show the button unlock if a rewarded video is available
+		/// Called when GameManager trigger the delegate OnFailStart. Will show the button unlock if a rewarded video is available
 		/// </summary>
 		void OnFailStart()
 		{
@@ -167,7 +167,7 @@ namespace AppAdvisory.AA
 		}
 
 		/// <summary>
-		/// Called when GameManager_spinny trigger the delegate OnFailComplete. Will restart the current level
+		/// Called when GameManager trigger the delegate OnFailComplete. Will restart the current level
 		/// </summary>
 		void OnFailComplete()
 		{
@@ -219,7 +219,7 @@ namespace AppAdvisory.AA
 				AdsManager.instance.ShowRewardedVideo( (bool success) => {
 				if(success)
 				{
-				FindObjectOfType<GameManager_spinny>().AnimationCameraSuccess();
+				FindObjectOfType<GameManager>().AnimationCameraSuccess();
 				}
 				else
 				{

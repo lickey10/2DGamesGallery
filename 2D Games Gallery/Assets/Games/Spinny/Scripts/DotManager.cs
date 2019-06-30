@@ -15,13 +15,13 @@ namespace AppAdvisory.AA
 {
 	public class DotManager : MonobehaviourHelper 
 	{
-		GameManager_spinny _gameManager;
-		GameManager_spinny gameManager
+		GameManager _gameManager;
+		GameManager gameManager
 		{
 			get
 			{
 				if(_gameManager == null)
-					_gameManager = FindObjectOfType<GameManager_spinny>();
+					_gameManager = FindObjectOfType<GameManager>();
 
 				return _gameManager;
 			}

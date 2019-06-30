@@ -548,7 +548,8 @@ PrefabInstance:
       propertyPath: m_Text
       value: Spinny
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4685795697605527159, guid: 9caf3c70cf7794c13926fec0d18441cd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9caf3c70cf7794c13926fec0d18441cd, type: 3}
 --- !u!224 &211821957 stripped
 RectTransform:
@@ -943,6 +944,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
+      propertyPath: BackgroundColors.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
       propertyPath: BackgroundColor.r
       value: 0.38911614
       objectReference: {fileID: 0}
@@ -977,6 +982,66 @@ PrefabInstance:
     - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
       propertyPath: DotColor.b
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
+      propertyPath: BackgroundColors.Array.data[0].r
+      value: 0.8301887
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
+      propertyPath: BackgroundColors.Array.data[0].g
+      value: 0.05873976
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
+      propertyPath: BackgroundColors.Array.data[0].b
+      value: 0.47892934
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
+      propertyPath: BackgroundColors.Array.data[1].r
+      value: 0.18163423
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
+      propertyPath: BackgroundColors.Array.data[1].g
+      value: 0.8679245
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
+      propertyPath: BackgroundColors.Array.data[1].b
+      value: 0.11053756
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
+      propertyPath: BackgroundColors.Array.data[2].r
+      value: 0.9716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
+      propertyPath: BackgroundColors.Array.data[2].g
+      value: 0.6367103
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
+      propertyPath: BackgroundColors.Array.data[2].b
+      value: 0.14208792
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
+      propertyPath: BackgroundColors.Array.data[3].r
+      value: 0.28773582
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
+      propertyPath: BackgroundColors.Array.data[3].g
+      value: 0.35223505
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
+      propertyPath: BackgroundColors.Array.data[3].b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
+      propertyPath: BackgroundColors.Array.data[4].r
+      value: 0.9044058
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
+      propertyPath: BackgroundColors.Array.data[4].g
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460004, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}
+      propertyPath: BackgroundColors.Array.data[4].b
+      value: 0.118948035
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 857b629f170854a618f2fdf06c3a3bf8, type: 3}

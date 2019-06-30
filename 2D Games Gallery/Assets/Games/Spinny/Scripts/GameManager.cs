@@ -30,7 +30,7 @@ namespace AppAdvisory.AA
 	/// <summary>
 	/// Class in charge of the game logic.
 	/// </summary>
-	public class GameManager_spinny : MonobehaviourHelper
+	public class GameManager : MonobehaviourHelper
 	{
 		public int numberOfPlayToShowInterstitial = 5;
 

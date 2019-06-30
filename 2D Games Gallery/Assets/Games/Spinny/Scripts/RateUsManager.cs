@@ -42,14 +42,14 @@ namespace AppAdvisory.AA
 
 		void OnEnable()
 		{
-			GameManager_spinny.OnSuccessStart += CheckIfPromptRateDialogue;
-			GameManager_spinny.OnFailStart += CheckIfPromptRateDialogue;
+			GameManager.OnSuccessStart += CheckIfPromptRateDialogue;
+			GameManager.OnFailStart += CheckIfPromptRateDialogue;
 		}
 
 		void OnDisable()
 		{
-			GameManager_spinny.OnSuccessStart -= CheckIfPromptRateDialogue;
-			GameManager_spinny.OnFailStart -= CheckIfPromptRateDialogue;
+			GameManager.OnSuccessStart -= CheckIfPromptRateDialogue;
+			GameManager.OnFailStart -= CheckIfPromptRateDialogue;
 		}
 
 		void AddButtonListeners()
