@@ -3,7 +3,7 @@ using System.Collections;
 
 public class paneladjust : MonoBehaviour {
 		
-	public GUIText scoretext, score;
+	public UnityEngine.UI.Text scoretext, score;
 
 	void  Awake() 
 	{

@@ -2,7 +2,7 @@
 using System.Collections;
 
 [RequireComponent (typeof(AudioSource))]
-public class BackgroundMusic : MonoBehaviour
+public class BackgroundMusic_ColorScape : MonoBehaviour
 {
 	/// <summary>
 	/// Awake this instance.

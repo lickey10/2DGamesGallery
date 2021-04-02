@@ -23,7 +23,7 @@ public class textinstantiate : MonoBehaviour {
 	string txt="x";
 
 	//public score guitext drag-n-dropped here
-	public GUIText score;
+	public UnityEngine.UI.Text score;
 
 	//for scoring
 	int count=0;
@@ -32,9 +32,9 @@ public class textinstantiate : MonoBehaviour {
 	public GameObject w1, w2;
 
 	//colors and text guitexture are grag-dropped here from the "game" named object in hierarchy
-	public GUITexture[] colors;
+	public UnityEngine.UI.Image[] colors;
 	//colors guitexture from "common" gameobject are added here
-	public GUITexture[] common;
+	public UnityEngine.UI.Image[] common;
 
 	bool flag=false;
 
@@ -162,98 +162,98 @@ public class textinstantiate : MonoBehaviour {
 				Touch t = Input.GetTouch(i);
 				
 				if (t.phase == TouchPhase.Began) {
-					if (colors[0].HitTest(t.position, Camera.main)) {
+					if (colors[0].GetPixelAdjustedRect().Contains(t.position)) {
 							GetComponent<AudioSource>().Play();
 							c="b";
 							anim[0].Play();
 					}
 					
-					if (colors[1].HitTest(t.position, Camera.main)) {
+					if (colors[1].GetPixelAdjustedRect().Contains(t.position)) {
 							GetComponent<AudioSource>().Play();
 						c="c";
 							anim[1].Play();
 					}
 
-					if (colors[2].HitTest(t.position, Camera.main)) {
+					if (colors[2].GetPixelAdjustedRect().Contains(t.position)) {
 							GetComponent<AudioSource>().Play();
 						c="g";
 							anim[2].Play();
 					}
 
 
-					if (colors[3].HitTest(t.position, Camera.main)) {
+					if (colors[3].GetPixelAdjustedRect().Contains(t.position)) {
 							GetComponent<AudioSource>().Play();
 						c="m";
 							anim[3].Play();
 					}
 
-					if (colors[4].HitTest(t.position, Camera.main)) {
+					if (colors[4].GetPixelAdjustedRect().Contains(t.position)) {
 							GetComponent<AudioSource>().Play();
 						c="o";
 							anim[4].Play();
 					}
 
-					if (colors[5].HitTest(t.position, Camera.main)) {
+					if (colors[5].GetPixelAdjustedRect().Contains(t.position)) {
 							GetComponent<AudioSource>().Play();
 						c="r";
 							anim[5].Play();
 					}
 
-					if (colors[6].HitTest(t.position, Camera.main)) {
+					if (colors[6].GetPixelAdjustedRect().Contains(t.position)) {
 							GetComponent<AudioSource>().Play();
 						c="v";
 							anim[6].Play();
 					}
 
-					if (colors[7].HitTest(t.position, Camera.main)) {
+					if (colors[7].GetPixelAdjustedRect().Contains(t.position)) {
 							GetComponent<AudioSource>().Play();
 						c="y";
 							anim[7].Play();
 					}
-					if (colors[8].HitTest(t.position, Camera.main)) {
+					if (colors[8].GetPixelAdjustedRect().Contains(t.position)) {
 							GetComponent<AudioSource>().Play();
 						txt="b";
 							anim[8].Play();
 					}
 					
-					if (colors[9].HitTest(t.position, Camera.main)) {
+					if (colors[9].GetPixelAdjustedRect().Contains(t.position)) {
 							GetComponent<AudioSource>().Play();
 						txt="c";
 							anim[9].Play();
 					}
 					
-					if (colors[10].HitTest(t.position, Camera.main)) {
+					if (colors[10].GetPixelAdjustedRect().Contains(t.position)) {
 							GetComponent<AudioSource>().Play();
 						txt="g";
 							anim[10].Play();
 					}
 					
 					
-					if (colors[11].HitTest(t.position, Camera.main)) {
+					if (colors[11].GetPixelAdjustedRect().Contains(t.position)) {
 							GetComponent<AudioSource>().Play();
 						txt="m";
 							anim[11].Play();
 					}
 					
-					if (colors[12].HitTest(t.position, Camera.main)) {
+					if (colors[12].GetPixelAdjustedRect().Contains(t.position)) {
 							GetComponent<AudioSource>().Play();
 						txt="o";
 							anim[12].Play();
 					}
 					
-					if (colors[13].HitTest(t.position, Camera.main)) {
+					if (colors[13].GetPixelAdjustedRect().Contains(t.position)) {
 							GetComponent<AudioSource>().Play();
 						txt="r";
 							anim[13].Play();
 					}
 					
-					if (colors[14].HitTest(t.position, Camera.main)) {
+					if (colors[14].GetPixelAdjustedRect().Contains(t.position)) {
 							GetComponent<AudioSource>().Play();
 						txt="v";
 							anim[14].Play();
 					}
 					
-					if (colors[15].HitTest(t.position, Camera.main)) {
+					if (colors[15].GetPixelAdjustedRect().Contains(t.position)) {
 							GetComponent<AudioSource>().Play();
 						txt="y";
 							anim[15].Play();
@@ -275,42 +275,42 @@ public class textinstantiate : MonoBehaviour {
 			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(pos), Vector2.zero);
 
 
-			if (common[0].HitTest(Input.mousePosition, Camera.main)) {
+			if (common[0].GetPixelAdjustedRect().Contains(Input.mousePosition, Camera.main)) {
 				GetComponent<AudioSource>().Play();
 				txt="b";
 				anim[16].Play();
 			}
-			if (common[1].HitTest(Input.mousePosition, Camera.main)) {
+			if (common[1].GetPixelAdjustedRect().Contains(Input.mousePosition, Camera.main)) {
 				GetComponent<AudioSource>().Play();
 				txt="c";
 				anim[17].Play();
 			}
-			if (common[2].HitTest(Input.mousePosition, Camera.main)) {
+			if (common[2].GetPixelAdjustedRect().Contains(Input.mousePosition, Camera.main)) {
 				GetComponent<AudioSource>().Play();
 				txt="g";
 				anim[18].Play();
 			}
-			if (common[3].HitTest(Input.mousePosition, Camera.main)) {
+			if (common[3].GetPixelAdjustedRect().Contains(Input.mousePosition, Camera.main)) {
 				GetComponent<AudioSource>().Play();
 				txt="m";
 				anim[19].Play();
 			}
-			if (common[4].HitTest(Input.mousePosition, Camera.main)) {
+			if (common[4].GetPixelAdjustedRect().Contains(Input.mousePosition, Camera.main)) {
 				GetComponent<AudioSource>().Play();
 				txt="o";
 				anim[20].Play();
 			}
-			if (common[5].HitTest(Input.mousePosition, Camera.main)) {
+			if (common[5].GetPixelAdjustedRect().Contains(Input.mousePosition, Camera.main)) {
 				GetComponent<AudioSource>().Play();
 				txt="r";
 				anim[21].Play();
 			}
-			if (common[6].HitTest(Input.mousePosition, Camera.main)) {
+			if (common[6].GetPixelAdjustedRect().Contains(Input.mousePosition, Camera.main)) {
 				GetComponent<AudioSource>().Play();
 				txt="v";
 				anim[22].Play();
 			}
-			if (common[7].HitTest(Input.mousePosition, Camera.main)) {
+			if (common[7].GetPixelAdjustedRect().Contains(Input.mousePosition, Camera.main)) {
 				GetComponent<AudioSource>().Play();
 				txt="y";
 				anim[23].Play();

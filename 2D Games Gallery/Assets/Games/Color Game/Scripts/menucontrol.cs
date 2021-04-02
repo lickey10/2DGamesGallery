@@ -8,7 +8,7 @@ public class menucontrol : MonoBehaviour {
 	public GameObject[] mainmenu;
 
 	//help and level heading
-	public GUIText mode, mode_h;
+	public UnityEngine.UI.Text mode, mode_h;
 	float newtime, starttime;
 	bool time=false;
 
