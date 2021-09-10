@@ -69,3 +69,7 @@ crashlytics-build.properties
 2D Games Gallery/Library/StateCache/SceneView/583e00-mainStage.json
 2D Games Gallery/Library/shadercompiler-UnityShaderCompiler.exe7.log
 *.log
+**/Temp/**
+**/Library/**
+**/obj/**
+**/logs/**
